@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="largecontainer">
+        <header>
+            <div class="position">
+                <nav class="navbar">
+                    <div class="navleftcontent">
+                        <div class="logo">
+                            <img src="https://www.discoveryplus.in/129c5de772422db12a69e397768bd8ec.png"
+                                style="width: 170px; display: inline-block; position: absolute; left: 3.5em;top: 0.9375em;"
+                                alt="logo">
+                        </div>
+                        <!-- <p>A menu icon:</p> -->
+
+                        <div class="dropdown">
+                            <div class="menu"></div>
+                            <div class="menu"></div>
+                            <div class="menu"></div>
+                            <div class="dropdown-content">
+                                <li class="submenu"><a href=""><img
+                                            src="https://ap2-prod-images.disco-api.com/2020/2/24/4f4f68ad-00c3-4efd-99a0-2588f474dd77.png"
+                                            alt="" style="height: 18px;"> &nbsp;&nbsp;Redeem Voucher </a></li>
+                                <li class="submenu"><a href=""><img
+                                            src="https://ap2-prod-images.disco-api.com/2019/12/4/90967675-0cdf-4ab2-bf46-ed47e350e16a.png"
+                                            alt="" style="height:18px;"> &nbsp;&nbsp;Favourites </a></li>
+                                <li class="submenu"><a href=""> <img
+                                            src="https://ap2-prod-images.disco-api.com/2019/12/4/61155859-de1a-4d28-8804-10e59357044a.png"
+                                            alt="" style="height:18px;"> &nbsp;&nbsp;Watchlist</a></li>
+                                <li class="submenu"><a href=""><img
+                                            src="https://ap2-prod-images.disco-api.com/2020/6/25/d373b9f4-874b-4080-b44a-ccba882dcc91.png"
+                                            alt="" style="height:18px;"> &nbsp;&nbsp;Link TV App </a></li>
+                            </div>
+                        </div>
+
+
+                        <ul>
+                            <li> <a href="">Home</a> </li>
+                            <li> <a href="">Explore</a></li>
+                            <li> <a href="">Kids</a></li>
+                            <li> <a href="">Shorts</a></li>
+                            <li> <a href="">Mindblown</a></li>
+                            <li> <a href="">Premium</a></li>
+                            <div class="navrightcontent">
+                                <div class="search">
+                                    <input type="text" name="search" id="search"
+                                        placeholder="Search for a show,episode,shorts etc."> <i class="fa fa-search"
+                                        style="position: relative; right:2.3em; font-size: 16px;"></i>
+
+                                    <!-- <i class="fas fa-search" ></i> -->
+                                    <button type="button" id="signin">Sign In </button>
+
+                                    <button class="buyplan">Buy Plan</button>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section id="herosec">
+            <div class="wholecontenthero">
+                <div class="img" id="heroimg">
+                    <img src="https://ap2-prod-images.disco-api.com/2024/01/19/e1e20e17-09ab-4a6d-b33a-092df1742d76.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                        alt="">
+                </div>
+                <div class="wcontent">
+                    <h1> <b>Sectrets Of The <br>Buddha Relics </b> </h1>
+                    <p>Discover the origins,cultural and spiritual <br>significance of Buddhism.</p>
+
+                    <span class="twob" id="dontmiss">Don't Miss</span> <span class="twob" id="newep">All New
+                        Episodes</span>
+                    <div class="playbutton" id="bannerplaybutton"
+                        style="height: 30px; width: 30px; font: 20px Roboto-Regular, sans-serif;color: white;">
+                        <i class="fa-regular fa-circle-play" id="playicon"></i>
+                        <img src="" alt="">
+                        <h6 id="playbuttonheading">Play</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="circles">
+            <div class="babydot"></div>
+            <div class="babydot" id="dot2"></div>
+            <div class="babydot"></div>
+            <div class="babydot"></div>
+            <div class="babydot"></div>
+            <div class="babydot"></div>
+            <div class="babydot"></div>
+            <div class="babydot"></div>
+        </div>
+        <!-- Theme  -->
+        <section class="theme">
+            <div class="box" id="box1">
+                <img src="https://ap2-prod-images.disco-api.com/2021/03/01/2a76ce95-fdcc-492d-b78e-42932a724e0f.jpeg?w=1200&p=true&q=75"
+                    alt="">
+                <div class="theme_name">
+                    <span class="subject" id="adventurehover"><b>Adventure </b></span>
+                </div>
+            </div>
+            <div class="box" id="box2">
+                <img src="https://ap2-prod-images.disco-api.com/2021/03/01/d35919b6-0146-457d-b48e-ac101c134111.jpeg?w=1200&p=true&q=75"
+                    alt="">
+                <div class="theme_name">
+                    <span class="subject" id="sciencehover"><b>Science</b></span>
+                </div>
+            </div>
+            <div class="box" id="box3">
+                <img src="https://ap2-prod-images.disco-api.com/2021/03/01/c7f3d702-f0a8-40e3-958c-955a9180affc.jpeg?w=1200&p=true&q=75"
+                    alt="">
+                <div class="theme_name">
+                    <span class="subject" id="historyhover"><b>History</b></span>
+                </div>
+            </div>
+            <div class="box" id="box4">
+                <img src="https://ap2-prod-images.disco-api.com/2021/07/01/58001170-51ce-474e-8dda-70f97c5a74f4.jpeg?w=1200&p=true&q=75"
+                    alt="">
+                <div class="theme_name">
+                    <span class="subject" id="freewatchhover"><b>Free Watch</b></span>
+                </div>
+            </div>
+            <div class="box" id="box5">
+                <img src="https://ap2-prod-images.disco-api.com/2021/04/23/6ac7cb1d-1d65-47bd-8df1-af2fba730f82.jpeg?w=1200&p=true&q=75"
+                    alt="">
+                <div class="theme_name">
+                    <span class="subject" id="investigationhover"><b>Investigation</b></span>
+                </div>
+            </div>
+            <!-- <div class="box" id="box6">
+                <img src="https://ap2-prod-images.disco-api.com/2021/04/16/0063fb3a-2b5f-416f-b7b1-e526bf4c1b37.jpeg?w=1200&p=true&q=75"
+                    alt="">
+                    <div class="theme_name">
+                        <span class="subject">Nature</span>
+                    </div>
+            </div> -->
+        </section>
+    </div>
+
+    <div class="pcontainer">
+        <!-- Shows You Love -->
+        <div class="container" id="showulov">
+            <div class="heading">
+                <div class="wrapper">
+                    <h2>Shows You Love <span class="viewall">View All</span></h2>
+
+                </div>
+            </div>
+            <div class="flexitem">
+
+                <div class="series" id="series1">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2023/03/05/bbd9636c-a15b-413d-a6c5-82283024ed5d.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+
+                            <h5>Little Singham</h5>
+                            <p>A nine-years-old boy battle evil...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="series" id="series2">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2023/05/15/e75ded76-173d-4b3e-aa57-028d00bab525.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Fukrey Boyzzz</h5>
+                            <p>Choocha,Hunny and Laali are kid... <i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="series" id="series3">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2023/04/13/da6726e4-285a-442a-ab6a-9727f1aaf640.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Deadliest Catch</h5>
+                            <p>Crab fishermen battle Arctic... <i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="series" id="series4">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/03/13/a418a21d-682c-4a9c-a656-280ca93813c0.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Gold Rush</h5>
+                            <p>Hardworking gold miners risk the...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newly Added Show -->
+        <div class="container" id="newshow"> <br>
+            <h2>Newly Added Shows <span class="viewall">View All</span></h2>
+            <div class="flexitem">
+                <div class="bat" id="bat1">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/04/22/51db4f98-0e15-415d-b634-5ab1352f23c9.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>The Green Planet</h5>
+                            <p>Step into a magical hidden world<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bat" id="bat2">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/04/18/dd7ff335-cad7-472c-90eb-58cde9e38965.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Martial Arts of India</h5>
+                            <p>Discover Kushti,India's ancient ar...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bat" id="bat3">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/05/03/f8cf1c76-881b-413b-a9ad-e4f05350c640.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>In Pursuit with john Walsh</h5>
+                            <p>John Walsh tracks down fu...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bat" id="bat4">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/04/26/684afa23-8728-4a65-a4ee-ecfbac82ef9b.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Gladiators</h5>
+                            <p>Discover how animals...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Newly Added Season -->
+        <div class="container" id="newseason">
+            <h2>Newly Added Seasons <span class="viewall">View All</span></h2>
+            <div class="flexitem">
+                <div class="ball" id="ball1">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/04/12/29da98f4-4c0b-4fea-aea6-f07f685de337.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Signs of Psychopath</h5>
+                            <p>Psychopath reveal themselves...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ball" id="ball2">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/05/06/10fd10d8-8db7-4776-9abb-d0ed992ef9a8.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Expedition Unknown</h5>
+                            <p>Josh Gates investigates the...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ball" id="ball3">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/03/11/1e510125-1d41-4fe5-bb0a-a9bd8562cb05.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Evil Lives Here</h5>
+                            <p>People recount their true story...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ball" id="ball4">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/02/21/fcda88f4-a81f-483f-89e4-b4d2b0159fcb.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>The Playboy Murders</h5>
+                            <p>Investigate the mysterious...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="pcontainer2">
+        <!-- Stream For  Free  -->
+        <div class="container" id="forfree">
+            <h2>Stream For Free Now <span class="viewall">View All</span></h2>
+            <div class="flexitem">
+                <div class="shuttle" id="shuttle1">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/04/26/dd160ac6-c7e7-49ff-9d3c-2f6f81f77e10.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Ganga:The Eternal Flow</h5>
+                            <p>See the impact Uttar Pradesh has had on th...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shuttle" id="shuttle2">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/04/22/e830db09-14b1-4f9b-9011-068b85e9dee5.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Journey to Enlightment</h5>
+                            <p>See the impact Uttar Pradesh has had on th...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shuttle" id="shuttle3">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2020/06/02/1d114e07-038f-4299-8600-11fa97228e72.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Gold Rush: White Water</h5>
+                            <p>Miners Fred and Dustin are determined to ma...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shuttle" id="shuttle4">
+                    <img src="https://ap2-prod-images.disco-api.com/2020/03/04/0bc1cb72-2899-4b5c-b36e-fff7e4ecba6a.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                        alt=""> -
+                    <!-- <div class="description">
+                        <h5>Morgan Freeman's Through the Wormhole</h5>
+                        <p>Host Morgan Freeman explores the mysterie...<i class="fa-regular fa-heart"></i></p>
+                    </div> -->
+                </div>
+                <div class="shuttle" id="shuttle5">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/02/28/6816a602-8026-447e-a2e1-fa3d038aba5f.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Mega Bank of India</h5>
+                            <p>Explore mega bank of India--A gateway to t...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shuttle" id="shuttle6">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/02/02/9eba9d72-c605-497f-9b9a-0893a72e2ba5.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Bering Sea Gold</h5>
+                            <p>In Nome,Alaska,miners search for gold...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Discovery+ India Originals -->
+        <div class="container" id="discovery">
+            <h2>discovery+ India Originals <span class="viewall">View All</span></h2>
+            <div class="flexitem">
+                <div class="cock" id="cock1">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/01/20/e0e84aa9-8118-4443-a7f3-db750b9307df.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Legend of Ramayana With Amish</h5>
+                            <p>Amish Tripati traverses 5,000...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cock" id="cock2">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/01/19/e1e20e17-09ab-4a6d-b33a-092df1742d76.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Secret Of The Buddha Relics</h5>
+                            <p>Discover the origins,cultural and spiritual...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cock" id="cock3">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2023/02/04/65ee595f-b352-4d2c-8c1f-f06139d1d767.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Love Kills:Madhumita Shukla Hatyakand</h5>
+                            <p>Murder,passion,politics--the...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cock" id="cock4">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2023/11/18/48eb3800-f3fc-41e3-954d-a193fdb817df.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>History Hunter</h5>
+                            <p>Manish Paul explores the unexplained...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cock" id="cock5">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2023/08/31/335a1aad-fe9b-4b5d-8524-680078051d9f.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Money Mafia</h5>
+                            <p>Some of the most shocking con stories i...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cock" id="cock6">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2022/05/09/b2e4c5fd-aafe-44c2-8bb5-04e3532b357d.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                            alt="">
+                        <div class="description">
+                            <h5>Ganganyaan:Bharat Ki Antariksh Udaan</h5>
+                            <p>India's brightest minds are set to chart new...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div> <br>
+        </div>
+    </div>
+
+    </div>
+    <section>
+        <footer>
+            <div class="footercontent">
+                <!-- <div class="footerbaby1"> -->
+                <!-- <div class="footerbaby1writtencontent"> -->
+                <div class="fcontent">
+                    <h6><i class="fa-solid fa-phone"></i> 022-43491100 +91-8433774761 (Mon-Fri,excluding
+                        holidays 11am-4pm)
+                    </h6>
+                    <h6><i class="fa-solid fa-envelope"></i>hello@discovery.com
+                    </h6>
+                    <h6><img src="discovery-plus-logo-B3BFCC53F5-seeklogo.com.png" alt="">Discover India,5th
+                        Floor, WeWork BKC, C20 G Block, Bandra Kurla Complex, Mumbai 400051
+                    </h6>
+                </div>
+                <!-- <div class="fcontent" id="address">
+                        </div> -->
+                <!-- </div> -->
+                <!-- <div class="footerasidecontent"> -->
+                <div class="links">
+                    <h6>Follow us</h6>
+                    <div class="youtubefacebook">
+                        <a href="http://www.youtube.com/" id="youtubeicon"><i class="fab fa-youtube"></i></a>
+                        <a href="http://www.facebook.com/" id="facebookicon"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+                <div class="googleappstore">
+                    <h6>discovery+ App</h6>
+                    <div class="linkbox">
+                        <a href=""> <img src="AppStore.png" alt="AppStore"></a>
+                        <a href=""><img src="GooglePlay.png" alt="GooglePlay"></a>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+
+
+    </section>
+    </footer>
+    <div class="footerbaby2">
+
+        <div class="threelinks">
+
+            <div>Advertising Services Terms & Conditions</div>
+            <div>Online Advertising Order</div>
+            <div>Support</div>
+        </div>
+    </div>
+    <div class="last">
+        <div class="vertical"></div>
+    </div>
+    <div class="footer-last">
+    <div class="footerlink-2">
+            <div>Privacy Policy</div>
+            <div>Terms of Use</div>
+            <div>FAQ's</div>
+        </div>
+            <div class="hrright">
+                Copyright © 2022 Discovery, Inc. or its subsidiaries and affiliates. All rights reserved.</div>
+            </div>
+</body>
+
+</html>
