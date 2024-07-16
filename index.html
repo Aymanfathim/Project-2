@@ -21,59 +21,43 @@
         <header>
             <div class="position">
                 <nav class="navbar">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
                     <div class="navleftcontent">
+
+
                         <div class="logo">
-                            <img src="https://www.discoveryplus.in/129c5de772422db12a69e397768bd8ec.png"
-                                style="width: 170px; display: inline-block; position: absolute; left: 3.5em;top: 0.9375em;"
-                                alt="logo">
+                            <img src="https://www.discoveryplus.in/129c5de772422db12a69e397768bd8ec.png" alt="logo">
                         </div>
                         <!-- <p>A menu icon:</p> -->
 
                         <div class="dropdown">
-                            <div class="menu"></div>
-                            <div class="menu"></div>
-                            <div class="menu"></div>
-                            <div class="dropdown-content">
-                                <li class="submenu"><a href=""><img
-                                            src="https://ap2-prod-images.disco-api.com/2020/2/24/4f4f68ad-00c3-4efd-99a0-2588f474dd77.png"
-                                            alt="" style="height: 18px;"> &nbsp;&nbsp;Redeem Voucher </a></li>
-                                <li class="submenu"><a href=""><img
-                                            src="https://ap2-prod-images.disco-api.com/2019/12/4/90967675-0cdf-4ab2-bf46-ed47e350e16a.png"
-                                            alt="" style="height:18px;"> &nbsp;&nbsp;Favourites </a></li>
-                                <li class="submenu"><a href=""> <img
-                                            src="https://ap2-prod-images.disco-api.com/2019/12/4/61155859-de1a-4d28-8804-10e59357044a.png"
-                                            alt="" style="height:18px;"> &nbsp;&nbsp;Watchlist</a></li>
-                                <li class="submenu"><a href=""><img
-                                            src="https://ap2-prod-images.disco-api.com/2020/6/25/d373b9f4-874b-4080-b44a-ccba882dcc91.png"
-                                            alt="" style="height:18px;"> &nbsp;&nbsp;Link TV App </a></li>
-                            </div>
-                        </div>
+                            <ul>
+                                <li> <a href="https://www.discoveryplus.in/home">Home</a> </li>
+                                <li> <a href="https://www.discoveryplus.in/explore-v4">Explore</a></li>
+                                <li> <a href="https://www.discoveryplus.in/kids/home">Kids</a></li>
+                                <li> <a href="https://www.discoveryplus.in/shorts">Shorts</a></li>
+                                <li> <a href="https://www.discoveryplus.in/mindblown">Mindblown</a></li>
+                                <li> <a href="https://www.discoveryplus.in/go-premium-web">Premium</a></li>
+                                <div class="navrightcontent">
+                                    <div class="search">
+                                        <input type="text" name="search" id="search"
+                                            placeholder="Search for a show,episode,shorts etc."> <i class="fa fa-search"
+                                            id="serachboxcss"></i>
 
+                                        <!-- <i class="fas fa-search" ></i> -->
+                                        <button type="button" id="signin">Sign In </button>
 
-                        <ul>
-                            <li> <a href="">Home</a> </li>
-                            <li> <a href="">Explore</a></li>
-                            <li> <a href="">Kids</a></li>
-                            <li> <a href="">Shorts</a></li>
-                            <li> <a href="">Mindblown</a></li>
-                            <li> <a href="">Premium</a></li>
-                            <div class="navrightcontent">
-                                <div class="search">
-                                    <input type="text" name="search" id="search"
-                                        placeholder="Search for a show,episode,shorts etc."> <i class="fa fa-search"
-                                        style="position: relative; right:2.3em; font-size: 16px;"></i>
-
-                                    <!-- <i class="fas fa-search" ></i> -->
-                                    <button type="button" id="signin">Sign In </button>
-
-                                    <button class="buyplan">Buy Plan</button>
+                                        <button class="buyplan">Buy Plan</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </ul>
-                    </div>
+                            </ul>
+                        </div>
                 </nav>
             </div>
         </header>
+
         <section id="herosec">
             <div class="wholecontenthero">
                 <div class="img" id="heroimg">
@@ -83,14 +67,14 @@
                 <div class="wcontent">
                     <h1> <b>Sectrets Of The <br>Buddha Relics </b> </h1>
                     <p>Discover the origins,cultural and spiritual <br>significance of Buddhism.</p>
-
-                    <span class="twob" id="dontmiss">Don't Miss</span> <span class="twob" id="newep">All New
-                        Episodes</span>
-                    <div class="playbutton" id="bannerplaybutton"
-                        style="height: 30px; width: 30px; font: 20px Roboto-Regular, sans-serif;color: white;">
-                        <i class="fa-regular fa-circle-play" id="playicon"></i>
-                        <img src="" alt="">
-                        <h6 id="playbuttonheading">Play</h6>
+                    <div class="dontmissplaybtn">
+                        <span class="twob" id="dontmiss">Don't Miss</span> <span class="twob" id="newep">All New
+                            Episodes</span>
+                        <div class="playbutton" id="bannerplaybutton">
+                            <i class="fa-regular fa-circle-play" id="playicon"></i>
+                            <img src="" alt="">
+                            <h6 id="playbuttonheading">Play</h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,8 +142,8 @@
         <div class="container" id="showulov">
             <div class="heading">
                 <div class="wrapper">
-                    <h2>Shows You Love <span class="viewall">View All</span></h2>
-
+                    <h2>Shows You Love </h2>
+                    <span class="viewall">View All</span>
                 </div>
             </div>
             <div class="flexitem">
@@ -210,7 +194,10 @@
 
         <!-- Newly Added Show -->
         <div class="container" id="newshow"> <br>
-            <h2>Newly Added Shows <span class="viewall">View All</span></h2>
+            <div class="wrapper">
+            <h2>Newly Added Shows </h2>
+            <span class="viewall">View All</span>
+        </div>
             <div class="flexitem">
                 <div class="bat" id="bat1">
                     <div class="cardimg">
@@ -258,7 +245,10 @@
 
         <!-- Newly Added Season -->
         <div class="container" id="newseason">
-            <h2>Newly Added Seasons <span class="viewall">View All</span></h2>
+            <div class="wrapper">
+            <h2>Newly Added Seasons</h2>
+            <span class="viewall">View All</span>
+        </div>
             <div class="flexitem">
                 <div class="ball" id="ball1">
                     <div class="cardimg">
@@ -307,7 +297,10 @@
     <div class="pcontainer2">
         <!-- Stream For  Free  -->
         <div class="container" id="forfree">
-            <h2>Stream For Free Now <span class="viewall">View All</span></h2>
+            <div class="wrapper">
+            <h2>Stream For Free Now </h2>
+            <span class="viewall">View All</span>
+        </div>
             <div class="flexitem">
                 <div class="shuttle" id="shuttle1">
                     <div class="cardimg">
@@ -372,7 +365,10 @@
 
         <!-- Discovery+ India Originals -->
         <div class="container" id="discovery">
-            <h2>discovery+ India Originals <span class="viewall">View All</span></h2>
+            <div class="wrapper">
+            <h2>discovery+ India Originals </h2>
+            <span class="viewall">View All</span>
+        </div>
             <div class="flexitem">
                 <div class="cock" id="cock1">
                     <div class="cardimg">
@@ -493,14 +489,14 @@
         <div class="vertical"></div>
     </div>
     <div class="footer-last">
-    <div class="footerlink-2">
+        <div class="footerlink-2">
             <div>Privacy Policy</div>
             <div>Terms of Use</div>
             <div>FAQ's</div>
         </div>
-            <div class="hrright">
-                Copyright © 2022 Discovery, Inc. or its subsidiaries and affiliates. All rights reserved.</div>
-            </div>
+        <div class="hrright">
+            Copyright © 2022 Discovery, Inc. or its subsidiaries and affiliates. All rights reserved.</div>
+    </div>
 </body>
 
 </html>
