@@ -68,7 +68,6 @@ body {
 }
 
 #searchboxcss {
-
     font-size: 16px;
 }
 
@@ -163,10 +162,8 @@ body {
 }
 
 #heroimg img {
-    width: 763px;
+    width: 100%;
     height: 429px;
-
-
 }
 
 .wcontent {
@@ -284,6 +281,7 @@ h2 {
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .box span:hover {
@@ -448,7 +446,8 @@ h2 {
 
 .shuttle img {
     width: 100%;
-    display: block;
+    height: 254px;
+    display: flex;
 }
 
 .shuttle .description {
@@ -483,6 +482,7 @@ h2 {
 
 .cock img {
     width: 100%;
+    height: 254px;
     display: block;
 }
 
@@ -506,32 +506,32 @@ h2 {
 
 #adventurehover{
     position: absolute;
-    left: 4em;
-    top: 35em;
+    left: 3em;
+    bottom: 0;
 }
 
 #sciencehover{
     position: absolute;
-    left: 16.5em;
-    top: 35em;
+    left: 4em;
+    bottom: 0;
 }
 
 #historyhover{
     position: absolute;
-    left: 29.5em;
-    top: 35em;
+    bottom: 0;
+    right: 4em;
 }
 
 #freewatchhover{
    position: absolute;
-   right: 17em;
-   top: 35em;
+   bottom: 0;
+   left: 3em;
 }
 
 #investigationhover {
     position: absolute;
-    top: 35em;
-    right: 4em;
+    bottom: 0;
+    right: 3em;
 }
 
 #showulov {
@@ -551,7 +551,7 @@ h2 {
 
 .pcontainer img {
     height: 177px;
-    width: 195px;
+    width: 100%;
     border-radius: 10px;
     padding: 5px;
 }
@@ -565,18 +565,6 @@ img {
     cursor: pointer;
 }
 
-.series img {
-    width: 280px;
-}
-
-.bat img {
-    width: 295px;
-}
-
-.ball img {
-    width: 295px;
-}
-
 #forfree {
     padding-top: 22px;
     padding-bottom: 23px;
@@ -585,17 +573,6 @@ img {
 #discovery {
     padding-top: 22px;
     padding-bottom: 23px;
-}
-
-.shuttle img {
-    width: 197px;
-    height: 254px;
-    display: flex;
-}
-
-.cock img {
-    height: 254px;
-    width: 197px;
 }
 
 .flexitem {
@@ -618,7 +595,6 @@ footer {
     background-color: #1b1b1b;
     z-index: 0;
     padding: 15px;
-    padding-left: 24px;
     font-size: 25px;
 }
 
