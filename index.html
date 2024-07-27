@@ -21,9 +21,9 @@
         <header>
             <div class="position">
                 <nav class="navbar">
-                    <div class="menu"></div>
-                    <div class="menu"></div>
-                    <div class="menu"></div>
+                    <!-- <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div> -->
                     <div class="navleftcontent">
 
 
@@ -33,30 +33,38 @@
                         <!-- <p>A menu icon:</p> -->
 
                         <div class="dropdown">
-                            <ul>
+                            <ul class="navbar-links">
                                 <li> <a href="https://www.discoveryplus.in/home">Home</a> </li>
                                 <li> <a href="https://www.discoveryplus.in/explore-v4">Explore</a></li>
                                 <li> <a href="https://www.discoveryplus.in/kids/home">Kids</a></li>
                                 <li> <a href="https://www.discoveryplus.in/shorts">Shorts</a></li>
                                 <li> <a href="https://www.discoveryplus.in/mindblown">Mindblown</a></li>
                                 <li> <a href="https://www.discoveryplus.in/go-premium-web">Premium</a></li>
-                                <div class="navrightcontent">
-                                    <div class="search">
-                                        <input type="text" name="search" id="search"
-                                            placeholder="Search for a show,episode,shorts etc."> <i class="fa fa-search"
-                                            id="serachboxcss"></i>
-
-                                        <!-- <i class="fas fa-search" ></i> -->
-                                        <button type="button" id="signin">Sign In </button>
-
-                                        <button class="buyplan">Buy Plan</button>
-                                    </div>
-                                </div>
                             </ul>
+                        </div>
+                        <!-- <button class="ham-icon">
+                            <label for="ham-label">
+                                <i class="fa-solid fa-bars"></i>
+                                <i class="fa-solid fa-x"></i>
+                            </label>
+                            <input type="checkbox" id="ham-label" />
+                        </button> -->
+                        <div class="navrightcontent">
+                            <div class="search">
+                                <input type="text" name="search" id="search"
+                                    placeholder="Search for a show,episode,shorts etc."> <i class="fa fa-search"
+                                    id="serachboxcss"></i>
+
+                                <!-- <i class="fas fa-search" ></i> -->
+                                <button type="button" id="signin">Sign In </button>
+
+                                <button class="buyplan">Buy Plan</button>
+                            </div>
                         </div>
                 </nav>
             </div>
         </header>
+
 
         <section id="herosec">
             <div class="wholecontenthero">
@@ -70,26 +78,28 @@
                     <div class="dontmissplaybtn">
                         <span class="twob" id="dontmiss">Don't Miss</span> <span class="twob" id="newep">All New
                             Episodes</span>
-                        <div class="playbutton" id="bannerplaybutton">
-                            <i class="fa-regular fa-circle-play" id="playicon"></i>
-                            <img src="" alt="">
-                            <h6 id="playbuttonheading">Play</h6>
+                        <div class="dots">
+                            <div class="playbutton" id="bannerplaybutton">
+                                <i class="fa-regular fa-circle-play" id="playicon"></i>
+                                <img src="" alt="">
+                                <h6 id="playbuttonheading">Play</h6>
+                            </div>
+                            <div class="circles">
+                                <div class="babydot"></div>
+                                <div class="babydot" id="dot2"></div>
+                                <div class="babydot"></div>
+                                <div class="babydot"></div>
+                                <div class="babydot"></div>
+                                <div class="babydot"></div>
+                                <div class="babydot"></div>
+                                <div class="babydot"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="circles">
-            <div class="babydot"></div>
-            <div class="babydot" id="dot2"></div>
-            <div class="babydot"></div>
-            <div class="babydot"></div>
-            <div class="babydot"></div>
-            <div class="babydot"></div>
-            <div class="babydot"></div>
-            <div class="babydot"></div>
-        </div>
         <!-- Theme  -->
         <section class="theme">
             <div class="box" id="box1">
@@ -127,13 +137,34 @@
                     <span class="subject" id="investigationhover"><b>Investigation</b></span>
                 </div>
             </div>
-            <!-- <div class="box" id="box6">
+            <div class="box" id="box6">
                 <img src="https://ap2-prod-images.disco-api.com/2021/04/16/0063fb3a-2b5f-416f-b7b1-e526bf4c1b37.jpeg?w=1200&p=true&q=75"
                     alt="">
-                    <div class="theme_name">
-                        <span class="subject">Nature</span>
-                    </div>
-            </div> -->
+                <div class="theme_name">
+                    <span class="subject" id="naturehover"><b>Nature</b></span>
+                </div>
+            </div>
+            <div class="box" id="box7">
+                <img src="https://ap2-prod-images.disco-api.com/2021/03/01/131b26fd-0931-4719-8866-132a458eafd8.jpeg?w=1200&p=true&q=75"
+                    alt="">
+                <div class="theme_name">
+                    <span class="subject" id="foodhover"><b>Food</b></span>
+                </div>
+            </div>
+            <div class="box" id="box7">
+                <img src="https://ap2-prod-images.disco-api.com/2021/03/01/3c871fae-9fab-4c79-a8fb-b73b62547828.jpeg?w=1200&p=true&q=75"
+                    alt="">
+                <div class="theme_name">
+                    <span class="subject" id="autohover"><b>Auto</b></span>
+                </div>
+            </div>
+            <div class="box" id="box8">
+                <img src="https://ap2-prod-images.disco-api.com/2021/03/01/83f75fdc-5ae5-4fda-9f28-f6e4813bcf45.jpeg?w=1200&p=true&q=75"
+                    alt="">
+                <div class="theme_name">
+                    <span class="subject" id="lifestylehover"> <b>Lifestyle</b></span>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -189,15 +220,45 @@
                         </div>
                     </div>
                 </div>
+                <div class="series" id="series5">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/07/01/0a2c6a16-5dd0-4772-bb09-240de319d2f3.jpeg?bf=0&f=jpg&p=true&q=75&w=500"
+                            alt="">
+                        <div class="description">
+                            <h5>Man vs. Wild</h5>
+                            <p>Bear Grylls shows how to survive...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="series" id="series6">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/07/03/bc5e53c5-cba3-4292-af8e-75b3268e2f4d.jpeg?bf=0&f=jpg&p=true&q=75&w=500"
+                            alt="">
+                        <div class="description">
+                            <h5>Ekaant: India's Abandoned History</h5>
+                            <p>Discover the history behind some...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="series" id="series7">
+                    <div class="cardimg">
+                        <img
+                            src="https://ap2-prod-images.disco-api.com/2024/06/24/71bf8ae3-af34-4718-a8dc-8ad72099f6d1.jpeg?bf=0&f=jpg&p=true&q=75&w=500">
+                        <div class="description">
+                            <h5>Cycling World Tour 2024: LIVE &...</h5>
+                            <p>Stream LIVE cycling event acros...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Newly Added Show -->
         <div class="container" id="newshow"> <br>
             <div class="wrapper">
-            <h2>Newly Added Shows </h2>
-            <span class="viewall">View All</span>
-        </div>
+                <h2>Newly Added Shows </h2>
+                <span class="viewall">View All</span>
+            </div>
             <div class="flexitem">
                 <div class="bat" id="bat1">
                     <div class="cardimg">
@@ -209,6 +270,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="bat" id="bat2">
                     <div class="cardimg">
                         <img src="https://ap2-prod-images.disco-api.com/2024/04/18/dd7ff335-cad7-472c-90eb-58cde9e38965.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
@@ -239,6 +301,36 @@
                         </div>
                     </div>
                 </div>
+                <div class="bat" id="bat5">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/07/12/8dfa7c2b-d869-4a22-99ba-36249fe1e1c9.jpeg?bf=0&f=jpg&p=true&q=75&w=500"
+                            alt="">
+                        <div class="description">
+                            <h5>Levision Wood Walkin With...</h5>
+                            <p>Levision wood uncover how...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bat" id="bat6">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/07/02/2847336d-99c5-4853-b00a-31584ba700b3.jpeg?bf=0&f=jpg&p=true&q=75&w=500"
+                            alt="">
+                        <div class="description">
+                            <h5>The Royal Enfield Story</h5>
+                            <p>Discover the legendary story...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bat" id="bat7">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/07/17/3597f8ad-32c9-4749-8a9e-a9255570fccd.jpeg?bf=0&f=jpg&p=true&q=75&w=500"
+                            alt="">
+                        <div class="description">
+                            <h5>The Black Widower</h5>
+                            <p>Six wives,four dead,all have...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -246,9 +338,9 @@
         <!-- Newly Added Season -->
         <div class="container" id="newseason">
             <div class="wrapper">
-            <h2>Newly Added Seasons</h2>
-            <span class="viewall">View All</span>
-        </div>
+                <h2>Newly Added Seasons</h2>
+                <span class="viewall">View All</span>
+            </div>
             <div class="flexitem">
                 <div class="ball" id="ball1">
                     <div class="cardimg">
@@ -260,6 +352,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="ball" id="ball2">
                     <div class="cardimg">
                         <img src="https://ap2-prod-images.disco-api.com/2024/05/06/10fd10d8-8db7-4776-9abb-d0ed992ef9a8.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
@@ -290,7 +383,36 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="ball" id="ball5">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2023/04/17/893cb6eb-3b00-4eed-8f97-6aa90218cbf8.jpeg?bf=0&f=jpg&p=true&q=75&w=500"
+                            alt="">
+                        <div class="description">
+                            <h5>Man Fire Food</h5>
+                            <p>Chef Roger Mooking explores the...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ball" id="ball6">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/06/28/95f14975-bea7-43ed-bb06-141dbc6715b0.jpeg?bf=0&f=jpg&p=true&q=75&w=500"
+                            alt="">
+                        <div class="description">
+                            <h5>Crimes Gone Viral</h5>
+                            <p>The wild stories behind viral vid...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ball" id="ball7">
+                    <div class="cardimg">
+                        <img src="https://ap2-prod-images.disco-api.com/2024/06/21/4a77fdcf-1950-4849-ba50-5e2ebc64aff2.jpeg?bf=0&f=jpg&p=true&q=75&w=500"
+                            alt="">
+                        <div class="description">
+                            <h5>Ghost Adventure</h5>
+                            <p>Zack Bagan and his crew...<i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -298,9 +420,9 @@
         <!-- Stream For  Free  -->
         <div class="container" id="forfree">
             <div class="wrapper">
-            <h2>Stream For Free Now </h2>
-            <span class="viewall">View All</span>
-        </div>
+                <h2>Stream For Free Now </h2>
+                <span class="viewall">View All</span>
+            </div>
             <div class="flexitem">
                 <div class="shuttle" id="shuttle1">
                     <div class="cardimg">
@@ -338,7 +460,7 @@
                     <!-- <div class="description">
                         <h5>Morgan Freeman's Through the Wormhole</h5>
                         <p>Host Morgan Freeman explores the mysterie...<i class="fa-regular fa-heart"></i></p>
-                    </div> -->
+                    </div>  -->
                 </div>
                 <div class="shuttle" id="shuttle5">
                     <div class="cardimg">
@@ -360,121 +482,225 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Discovery+ India Originals -->
-        <div class="container" id="discovery">
-            <div class="wrapper">
-            <h2>discovery+ India Originals </h2>
-            <span class="viewall">View All</span>
-        </div>
-            <div class="flexitem">
-                <div class="cock" id="cock1">
+                <div class="shuttle" id="shuttle7">
                     <div class="cardimg">
-                        <img src="https://ap2-prod-images.disco-api.com/2024/01/20/e0e84aa9-8118-4443-a7f3-db750b9307df.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                        <img src="https://ap2-prod-images.disco-api.com/2020/02/14/14ee1086-13da-4691-a7f0-fd2bbff33504.jpeg?w=428&p=true&q=75"
                             alt="">
                         <div class="description">
-                            <h5>Legend of Ramayana With Amish</h5>
-                            <p>Amish Tripati traverses 5,000...<i class="fa-regular fa-heart"></i></p>
+                            <h5>The Great Indian Factory</h5>
+                            <p>This in-depth look shows how common...<i class="fa-regular fa-heart"></i></p>
                         </div>
                     </div>
-                </div>
-                <div class="cock" id="cock2">
-                    <div class="cardimg">
-                        <img src="https://ap2-prod-images.disco-api.com/2024/01/19/e1e20e17-09ab-4a6d-b33a-092df1742d76.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
-                            alt="">
-                        <div class="description">
-                            <h5>Secret Of The Buddha Relics</h5>
-                            <p>Discover the origins,cultural and spiritual...<i class="fa-regular fa-heart"></i></p>
+                    <div class="shuttle" id="shuttle8">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2024/07/02/4e4cdfc0-0d1a-4c67-8161-e8054d45a5a5.jpeg?w=428&p=true&q=75"
+                                alt="">
+                            <div class="description">
+                                <h5>Illuminating The Future</h5>
+                                <p>The Story of Havells...<i class="fa-regular fa-heart"></i></p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="cock" id="cock3">
-                    <div class="cardimg">
-                        <img src="https://ap2-prod-images.disco-api.com/2023/02/04/65ee595f-b352-4d2c-8c1f-f06139d1d767.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
-                            alt="">
-                        <div class="description">
-                            <h5>Love Kills:Madhumita Shukla Hatyakand</h5>
-                            <p>Murder,passion,politics--the...<i class="fa-regular fa-heart"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cock" id="cock4">
-                    <div class="cardimg">
-                        <img src="https://ap2-prod-images.disco-api.com/2023/11/18/48eb3800-f3fc-41e3-954d-a193fdb817df.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
-                            alt="">
-                        <div class="description">
-                            <h5>History Hunter</h5>
-                            <p>Manish Paul explores the unexplained...<i class="fa-regular fa-heart"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cock" id="cock5">
-                    <div class="cardimg">
-                        <img src="https://ap2-prod-images.disco-api.com/2023/08/31/335a1aad-fe9b-4b5d-8524-680078051d9f.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
-                            alt="">
-                        <div class="description">
-                            <h5>Money Mafia</h5>
-                            <p>Some of the most shocking con stories i...<i class="fa-regular fa-heart"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cock" id="cock6">
-                    <div class="cardimg">
-                        <img src="https://ap2-prod-images.disco-api.com/2022/05/09/b2e4c5fd-aafe-44c2-8bb5-04e3532b357d.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
-                            alt="">
-                        <div class="description">
-                            <h5>Ganganyaan:Bharat Ki Antariksh Udaan</h5>
-                            <p>India's brightest minds are set to chart new...<i class="fa-regular fa-heart"></i></p>
+                        <div class="shuttle" id="shuttle9">
+                            <div class="cardimg">
+                                <img src="https://ap2-prod-images.disco-api.com/2024/03/14/d4fabc57-3db7-43d3-b168-2ab2070a875e.jpeg?w=428&p=true&q=75"
+                                    alt="">
+                                <div class="description">
+                                    <h5>Engineering Wonders</h5>
+                                    <p>See the renovations being execut...<i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                            <div class="shuttle" id="shuttle10">
+                                <div class="cardimg">
+                                    <img src="https://ap2-prod-images.disco-api.com/2020/02/03/7de5d4f7-2567-4953-ac88-57b015cb1925.jpeg?w=428&p=true&q=75"
+                                        alt="">
+                                    <div class="description">
+                                        <h5>Battle OPS</h5>
+                                        <p>India's iconic military operation...<i class="fa-regular fa-heart"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="shuttle" id="shuttle11">
+                                    <div class="cardimg">
+                                        <img src="https://ap2-prod-images.disco-api.com/2022/12/21/8ab119b4-43cf-4610-923d-139b79dbe318.jpeg?w=428&p=true&q=75"
+                                            alt="">
+                                        <div class="description">
+                                            <h5>Build India</h5>
+                                            <p>Uncover how transformative...<i class="fa-regular fa-heart"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div> <br>
         </div>
+        <section>
+            <!-- Discovery+ India Originals -->
+            <div class="container" id="discovery">
+                <div class="wrapper">
+                    <h2>discovery+ India Originals </h2>
+                    <span class="viewall">View All</span>
+                </div>
+                <div class="flexitem">
+                    <div class="cock" id="cock1">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2024/01/20/e0e84aa9-8118-4443-a7f3-db750b9307df.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                                alt="">
+                            <div class="description">
+                                <h5>Legend of Ramayana With Amish</h5>
+                                <p>Amish Tripati traverses 5,000...<i class="fa-regular fa-heart"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cock" id="cock2">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2024/01/19/e1e20e17-09ab-4a6d-b33a-092df1742d76.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                                alt="">
+                            <div class="description">
+                                <h5>Secret Of The Buddha Relics</h5>
+                                <p>Discover the origins,cultural and spiritual...<i class="fa-regular fa-heart"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cock" id="cock3">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2023/02/04/65ee595f-b352-4d2c-8c1f-f06139d1d767.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                                alt="">
+                            <div class="description">
+                                <h5>Love Kills:Madhumita Shukla Hatyakand</h5>
+                                <p>Murder,passion,politics--the...<i class="fa-regular fa-heart"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cock" id="cock4">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2023/11/18/48eb3800-f3fc-41e3-954d-a193fdb817df.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                                alt="">
+                            <div class="description">
+                                <h5>History Hunter</h5>
+                                <p>Manish Paul explores the unexplained...<i class="fa-regular fa-heart"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cock" id="cock5">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2023/08/31/335a1aad-fe9b-4b5d-8524-680078051d9f.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                                alt="">
+                            <div class="description">
+                                <h5>Money Mafia</h5>
+                                <p>Some of the most shocking con stories i...<i class="fa-regular fa-heart"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cock" id="cock6">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2022/05/09/b2e4c5fd-aafe-44c2-8bb5-04e3532b357d.jpeg?bf=0&f=jpg&p=true&q=85&w=900"
+                                alt="">
+                            <div class="description">
+                                <h5>Ganganyaan:Bharat Ki Antariksh Udaan</h5>
+                                <p>India's brightest minds are set to chart new...<i class="fa-regular fa-heart"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cock" id="cock7">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2021/09/06/128626f2-eadc-4b85-99e0-e02b415816ff.jpeg?w=428&p=true&q=75"
+                                alt="">
+                            <div class="description">
+                                <h5>Star vs Food</h5>
+                                <p>Bollywood celebs & chefs rutle...<i class="fa-regular fa-heart"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cock" id="cock8">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2020/03/15/76221411-ae3d-47cc-a48a-4eeb53b94a29.jpeg?w=428&p=true&q=75"
+                                alt="">
+                            <div class="description">
+                                <h5>Into The Wild </h5>
+                                <p>Bear Grylls takes India's superstar Rajni...<i class="fa-regular fa-heart"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cock" id="cock9">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2022/08/18/2b98d5dd-84c8-4907-ae80-bba2bc7a02ec.jpeg?w=428&p=true&q=75"
+                                alt="">
+                            <div class="description">
+                                <h5>Secret Of The Kohinoor</h5>
+                                <p>Follow the journey of the world's mos...<i class="fa-regular fa-heart"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cock" id="cock10">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2022/01/18/b3786a72-426d-48c9-b75f-b65cf286e7e7.jpeg?w=428&p=true&q=75"
+                                alt="">
+                            <div class="description">
+                                <h5>Breaking Point</h5>
+                                <p>An all acess view of training...<i class="fa-regular fa-heart"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cock" id="cock11">
+                        <div class="cardimg">
+                            <img src="https://ap2-prod-images.disco-api.com/2022/01/27/ed965e2f-65a7-41c6-a439-cef55951ff17.jpeg?w=428&p=true&q=75"
+                                alt="">
+                            <div class="description">
+                                <h5>Dangals of Crime</h5>
+                                <p>Dangals of crime exploes Indians...<i class="fa-regular fa-heart"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </div>
 
-    </div>
-    <section>
-        <footer>
-            <div class="footercontent">
-                <!-- <div class="footerbaby1"> -->
-                <!-- <div class="footerbaby1writtencontent"> -->
-                <div class="fcontent">
-                    <h6><i class="fa-solid fa-phone"></i> 022-43491100 +91-8433774761 (Mon-Fri,excluding
+    <footer>
+        <div class="footercontent">
+            <!-- <div class="footerbaby1"> -->
+            <!-- <div class="footerbaby1writtencontent"> -->
+            <div class="fcontent">
+                <div class="contactus">
+                    <h6>Contact us</h6>
+                    <h6 class="wrap"><i class="fa-solid fa-phone"></i> 022-43491100 +91-8433774761 (Mon-Fri,excluding
                         holidays 11am-4pm)
                     </h6>
-                    <h6><i class="fa-solid fa-envelope"></i>hello@discovery.com
+                    <h6 class="wrap"><i class="fa-solid fa-envelope"></i>hello@discovery.com
                     </h6>
-                    <h6><img src="discovery-plus-logo-B3BFCC53F5-seeklogo.com.png" alt="">Discover India,5th
+                    <h6 class="wrap"><img src="compass (1).png" alt="">Discover India,5th
                         Floor, WeWork BKC, C20 G Block, Bandra Kurla Complex, Mumbai 400051
                     </h6>
                 </div>
-                <!-- <div class="fcontent" id="address">
-                        </div> -->
-                <!-- </div> -->
-                <!-- <div class="footerasidecontent"> -->
-                <div class="links">
-                    <h6>Follow us</h6>
-                    <div class="youtubefacebook">
-                        <a href="http://www.youtube.com/" id="youtubeicon"><i class="fab fa-youtube"></i></a>
-                        <a href="http://www.facebook.com/" id="facebookicon"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-                <!-- </div> -->
-
-                <div class="googleappstore">
-                    <h6>discovery+ App</h6>
-                    <div class="linkbox">
-                        <a href=""> <img src="AppStore.png" alt="AppStore"></a>
-                        <a href=""><img src="GooglePlay.png" alt="GooglePlay"></a>
-                    </div>
-                </div>
-                <!-- </div> -->
             </div>
+            <!-- <div class="fcontent" id="address">
+                        </div> -->
+            <!-- </div> -->
+            <!-- <div class="footerasidecontent"> -->
+            <div class="links">
+                <h6>Follow us</h6>
+                <div class="youtubefacebook">
+                    <a href="http://www.youtube.com/" id="youtubeicon"><i class="fab fa-youtube"></i></a>
+                    <a href="http://www.facebook.com/" id="facebookicon"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <!-- </div> -->
 
-
-    </section>
+            <div class="googleappstore">
+                <h6>discovery+ App</h6>
+                <div class="linkbox">
+                    <a href=""> <img src="AppStore.png" alt="AppStore"></a>
+                    <a href=""><img src="GooglePlay.png" alt="GooglePlay"></a>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
     </footer>
     <div class="footerbaby2">
 

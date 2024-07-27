@@ -6,17 +6,23 @@
 
 body {
     background-color: rgb(24, 23, 23);
-    flex-wrap: wrap;
     font-family: Roboto, sans-serif;
 }
 
 .navbar {
     color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 10px 0;
 }
 
 .navleftcontent {
     display: flex;
-    margin-left: 1.5em;
+    justify-content: center;
+    padding: 12px;
 }
 
 .navbar li {
@@ -72,7 +78,7 @@ body {
 }
 
 .dropdown {
-    width: 15px;
+    width: 100%;
 }
 
 .menu {
@@ -81,37 +87,6 @@ body {
     background-color: rgb(180, 174, 174);
     margin: 3px 0;
     border-radius: 2px;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: gray;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    background-color: black;
-    width: 170px;
-}
-
-.dropdown-content {
-    display: none;
-    min-width: 100px;
-    list-style: none;
-    margin: 7px;
-}
-
-.submenu {
-    display: inline-block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: flex;
-    overflow-x: hidden;
-    flex-direction: column;
-}
-
-.dropdown:hover {
-    color: white;
 }
 
 #signin {
@@ -150,7 +125,6 @@ body {
 }
 
 .wholecontenthero {
-    height: 500px;
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -181,7 +155,6 @@ body {
 }
 
 .playbutton {
-    height: 30px;
     width: 30px;
     font: 20px Roboto-Regular, sans-serif;
     color: white;
@@ -209,9 +182,7 @@ body {
 .circles {
     font-size: 3rem;
     display: flex;
-    text-align: right;
-    padding-left: 72px;
-    padding-bottom: 0px;
+    gap: 1px;
 }
 
 .babydot {
@@ -222,6 +193,12 @@ body {
     border-radius: 50%;
     margin: 0px 3px;
     cursor: pointer;
+}
+
+.dots {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
 }
 
 #dot2 {
@@ -267,6 +244,15 @@ h2 {
     margin-top: 20px;
     margin-bottom: 18px;
     border-radius: 10px;
+
+    display: flex;
+    gap: 40px 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.theme::-webkit-scrollbar {
+    display: none;
 }
 
 .theme div img {
@@ -332,6 +318,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 177px;
 }
 
 .series .cardimg {
@@ -374,7 +361,7 @@ h2 {
 }
 
 .bat img {
-    width: 100%;
+
     display: block;
 }
 
@@ -432,12 +419,16 @@ h2 {
     opacity: 1;
 }
 
+
+.pcontainer2 img {
+    width: 300px;
+}
+
 /* STREAM FOR FREE */
 .shuttle {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 1em;
 }
 
 .shuttle .cardimg {
@@ -445,7 +436,7 @@ h2 {
 }
 
 .shuttle img {
-    width: 100%;
+    width: 200px;
     height: 254px;
     display: flex;
 }
@@ -481,7 +472,7 @@ h2 {
 }
 
 .cock img {
-    width: 100%;
+    width: 200px;
     height: 254px;
     display: block;
 }
@@ -504,28 +495,28 @@ h2 {
     opacity: 1;
 }
 
-#adventurehover{
+#adventurehover {
     position: absolute;
     left: 3em;
     bottom: 0;
 }
 
-#sciencehover{
+#sciencehover {
     position: absolute;
     left: 4em;
     bottom: 0;
 }
 
-#historyhover{
+#historyhover {
     position: absolute;
     bottom: 0;
     right: 4em;
 }
 
-#freewatchhover{
-   position: absolute;
-   bottom: 0;
-   left: 3em;
+#freewatchhover {
+    position: absolute;
+    bottom: 0;
+    left: 3em;
 }
 
 #investigationhover {
@@ -534,8 +525,32 @@ h2 {
     right: 3em;
 }
 
+#naturehover {
+    position: absolute;
+    bottom: 0;
+    right: 4em;
+}
+
+#foodhover {
+    position: absolute;
+    bottom: 0;
+    right: 5em;
+}
+
+#autohover {
+    position: absolute;
+    bottom: 0;
+    right: 5em;
+}
+
+#lifestylehover {
+    position: absolute;
+    bottom: 0;
+    right: 4em;
+}
+
+
 #showulov {
-    max-width: 1440px;
     margin: 0px auto;
     padding-top: 22px;
 }
@@ -544,14 +559,9 @@ h2 {
     background-color: #1b1b1b;
 }
 
-.series {
-    height: 177px;
-    margin: 10px;
-}
-
 .pcontainer img {
     height: 177px;
-    width: 100%;
+    width: 300px;
     border-radius: 10px;
     padding: 5px;
 }
@@ -565,41 +575,46 @@ img {
     cursor: pointer;
 }
 
+#newshow {
+    padding-top: 22px;
+}
+
 #forfree {
     padding-top: 22px;
-    padding-bottom: 23px;
 }
 
 #discovery {
-    padding-top: 22px;
     padding-bottom: 23px;
 }
 
 .flexitem {
     display: flex;
     gap: 40px 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.flexitem::-webkit-scrollbar {
+    display: none;
 }
 
 #forfree {
     font-weight: 20px;
+    padding-top: 22px;
 }
 
 .cock {
     padding-top: 10px;
 }
 
-footer {
-    width: 1263px;
-    height: 120px;
+footer {/
     background-color: var(--brand-dark);
     background-color: #1b1b1b;
-    z-index: 0;
     padding: 15px;
     font-size: 25px;
 }
 
 .footercontent {
-    height: 28px;
     color: #838991;
     display: flex;
     flex-direction: row;
@@ -613,15 +628,20 @@ footer {
 }
 
 .fcontent {
-    height: 28px;
     padding-top: 6px;
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
 
+.contactus {
+    font-size: 30px;
+}
+
 .fcontent h6 {
+    padding: 5px;
     font-weight: 400;
+    font-size: 15px;
 }
 
 .fcontent img {
@@ -684,6 +704,8 @@ footer {
     gap: 35px;
     color: gray;
     padding: 13px;
+    width: 94%;
+    margin: 0 auto;
 }
 
 .threelinks div {
@@ -699,6 +721,11 @@ footer {
 
 hr {
     color: #1b1b1b;
+}
+
+.wrap {
+    display: flex;
+    gap: 5px;
 }
 
 #link h6 {
@@ -751,6 +778,11 @@ hr {
     background-color: gray;
 }
 
+.last {
+    width: 94%;
+    margin: 0 auto;
+}
+
 .footerbaby2 {
     color: gray;
     background-color: #1b1b1b;
@@ -771,4 +803,425 @@ hr {
     justify-content: space-between;
     padding: 15px;
     background-color: #1b1b1b;
+    width: 94%;
+    margin: 0 auto;
+}
+
+@media (min-width:250px) and (max-width:600px) {
+
+    .navbar {
+        flex-direction: row;
+        padding: 20px 0 10px 10px;
+        justify-content: space-between;
+
+    }
+
+    .wholecontenthero {
+        height: 500px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #herosec {
+        cursor: pointer;
+        height: 680px;
+    }
+
+    .wcontent {
+        font-family: Roboto, sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #playicon {
+        left: 0.8em;
+        top: 1.8em;
+        font-size: 42px;
+    }
+
+    .flexitem {
+        display: flex;
+        gap: 40px 10px;
+    }
+
+    .navleftcontent {
+        height: 250px;
+    }
+
+    .dropdown {
+        width: 100%;
+        background-color: white;
+        height: 0;
+        overflow: hidden;
+    }
+
+    #signin {
+        display: block;
+    }
+
+    #search {
+        display: none;
+    }
+    #serachboxcss {
+        position: absolute;
+        right: 1em;
+        top: 34px;
+        display: none;
+    }
+
+    .buyplan {
+        color: white;
+        background: linear-gradient(45deg, #2175d9 37%, #2789ff 77%);
+        border: none;
+        border-radius: 3px;
+        width: 81px;
+        margin-left: 9px;
+        height: 30px;
+        font-size: 16px;
+        margin-right: 2px;
+        cursor: pointer;
+    }
+
+    .wrapper h2 {
+        font-size: 20px;
+    }
+
+    .wrap {
+        font-size: 11px;
+    }
+
+    .fcontent img {
+        border-radius: 10px;
+        cursor: pointer;
+        width: 10px;
+        height: 14px;
+    }
+
+    .wrap i {
+        font-size: 10px;
+    }
+
+    .footercontent {
+        color: #838991;
+        display: flex;
+        font-weight: 100;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .googleappstore img {
+        width: 103px;
+        height: 36px;
+        margin: 0px 10px 0px 0px;
+        transition: all 0.5s ease;
+    }
+
+    .threelinks {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        color: gray;
+        padding: 13px;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .hrright {
+        font-size: 10px;
+    }
+
+    .footerlink-2 {
+        font-size: 10px;
+    }
+
+    .googleappstore h6 {
+        padding-left: 0px;
+    }
+
+    #playbuttonheading {
+        margin-top: 12px;
+    }
+}
+
+@media (min-width:600px) and (max-width:900px) {
+    .wholecontenthero {
+        height: 500px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #herosec {
+        cursor: pointer;
+        height: 680px;
+    }
+
+    .wcontent {
+        font-family: Roboto, sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wcontent h1 {
+        font-size: 1.8rem;
+    }
+
+    #playicon {
+        left: 0.8em;
+        top: 1.8em;
+        font-size: 42px;
+    }
+
+    #playbuttonheading {
+        margin-top: 11px;
+    }
+
+    .flexitem {
+        display: flex;
+        gap: 40px 10px;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+   
+
+    .theme div img {
+        height: 130px;
+        border-radius: 50%;
+    }
+
+
+    .buyplan {
+        color: white;
+        background: linear-gradient(45deg, #2175d9 37%, #2789ff 77%);
+        border: none;
+        border-radius: 3px;
+        width: 81px;
+        margin-left: 9px;
+        height: 30px;
+        font-size: 16px;
+        margin-right: 2px;
+        cursor: pointer;
+    }
+
+    .wrapper h2 {
+        font-size: 20px;
+    }
+
+    .wrap {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .fcontent img {
+        border-radius: 10px;
+        cursor: pointer;
+        width: 10px;
+        height: 14px;
+    }
+
+    .wrap i {
+        font-size: 10px;
+    }
+
+    .footercontent {
+        color: #838991;
+        display: flex;
+        font-weight: 100;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .googleappstore img {
+        width: 103px;
+        height: 36px;
+        margin: 0px 10px 0px 0px;
+        transition: all 0.5s ease;
+    }
+
+    .threelinks {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        color: gray;
+        padding: 13px;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .hrright {
+        font-size: 10px;
+    }
+
+    .footerlink-2 {
+        font-size: 10px;
+    }
+
+    .googleappstore h6 {
+        padding-left: 0px;
+    }
+
+    .search {
+        display: flex;
+        gap: 12px;
+        margin-left: 23px;
+    }
+
+    #search {
+        width: 200px;
+    }
+}
+
+@media (min-width:900px) and (max-width:1030px) {
+    .wholecontenthero {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #herosec {
+        cursor: pointer;
+
+    }
+
+    .wcontent {
+        font-family: Roboto, sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wcontent h1 {
+        font-size: 1.8rem;
+    }
+
+    #playicon {
+        left: 0.8em;
+        top: 1.8em;
+        font-size: 42px;
+    }
+
+
+    #playbuttonheading {
+        margin-top: 14px;
+    }
+
+    .flexitem {
+        display: flex;
+        gap: 40px 10px;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+
+    .theme div img {
+        height: 130px;
+        border-radius: 50%;
+    }
+
+
+    .buyplan {
+        color: white;
+        background: linear-gradient(45deg, #2175d9 37%, #2789ff 77%);
+        border: none;
+        border-radius: 3px;
+        width: 81px;
+        margin-left: 9px;
+        height: 30px;
+        font-size: 16px;
+        margin-right: 2px;
+        cursor: pointer;
+    }
+
+    .wrapper h2 {
+        font-size: 20px;
+    }
+
+    .wrap {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .fcontent img {
+        border-radius: 10px;
+        cursor: pointer;
+        width: 10px;
+        height: 14px;
+    }
+
+    .wrap i {
+        font-size: 15px;
+    }
+
+    .footercontent {
+        color: #838991;
+        display: flex;
+        font-weight: 100;
+        justify-content: space-evenly;
+        gap: 12px;
+    }
+
+    .googleappstore img {
+        width: 140px;
+        height: 55px;
+        margin: 0px 10px 0px 0px;
+        transition: all 0.5s ease;
+    }
+
+    .threelinks {
+        display: flex;
+        gap: 2px;
+        color: gray;
+        padding: 13px;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .threelinks div {
+        font-size: 18px;
+    }
+
+    .links h6 {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .hrright {
+        font-size: 16px;
+    }
+
+    .footerlink-2 {
+        font-size: 15px;
+    }
+
+    .googleappstore h6 {
+        padding-left: 0px;
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    .navleftcontent {
+        display: flex;
+        padding: 21px;
+        gap: 3em;
+    }
+
+
+
 }
